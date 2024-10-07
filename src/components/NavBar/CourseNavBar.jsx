@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaChevronDown } from 'react-icons/fa'; // Hamburger and Down-arrow icons from react-icons
+import { FaBars, FaChevronDown, FaCoins } from 'react-icons/fa'; // Hamburger and Down-arrow icons from react-icons
 
 const CourseNavbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -9,7 +9,7 @@ const CourseNavbar = () => {
   };
 
   return (
-    <div className="fixed w-full bg-white shadow-md px-4 py-2 flex justify-between items-center">
+    <div className="fixed w-full bg-white shadow-md p-4 flex justify-between items-center">
       {/* Left Side: Hamburger Icon */}
       <div className="flex items-center">
         <FaBars size={24} className="text-gray-700" /> {/* Hamburger Icon */}
@@ -39,7 +39,8 @@ const CourseNavbar = () => {
       
       {/* Right Side: Placeholder for potential icons or profile */}
       <div className="flex items-center">
-        {/* Additional icons or profile section can go here if needed */}
+        <FaCoins size={24} className="text-yellow-500" /> {/* Token Logo */}
+        <span className="ml-2 text-lg font-semibold text-gray-700">100 Tokens</span>
       </div>
     </div>
   );

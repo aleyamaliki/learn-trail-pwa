@@ -3,7 +3,7 @@ import { FaCoins } from 'react-icons/fa'; // Token icon from react-icons
 
 const HomeNavbar = () => {
   return (
-    <div className="fixed w-full bg-white shadow-md px-4 py-2 flex justify-between items-center">
+    <div className="fixed w-full bg-white shadow-md p-4 flex justify-between items-center">
       {/* Left Side */}
       <div>
         <img

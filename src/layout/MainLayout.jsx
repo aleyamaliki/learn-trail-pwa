@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import TabNav from '../components/TabNav';
 import HomeNavbar from '../components/NavBar/HomeNavBar';
 import CourseNavbar from '../components/NavBar/CourseNavBar';
+import ProfileNavbar from '../components/NavBar/ProfileNavBar';
 
 const MainLayout = () => {
     const location = useLocation();
@@ -11,6 +12,9 @@ const MainLayout = () => {
     switch (location.pathname) {
         case '/course':
             headerBar = <CourseNavbar />;
+            break;
+        case '/profile':
+            headerBar = <ProfileNavbar />;
             break;
         default:
             headerBar = <HomeNavbar />;
@@ -22,13 +26,11 @@ const MainLayout = () => {
         </header>
 
 
-      <div className="flex-grow overflow-y-auto">
+      <div className="flex-grow p-4 pt-16 overflow-y-auto">
         <Outlet />
       </div>
 
-      <footer className="flex-shrink-0">
             <TabNav />
-        </footer>
     </div>
   );
 };

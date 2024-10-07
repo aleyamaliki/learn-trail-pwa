@@ -1,8 +1,14 @@
 import React from 'react'
+import UserProfile from '../components/Profile/UserProfile'
+import CourseBadge from '../components/Course/CourseBadgeList'
+import CourseBadgePage from '../components/Course/CourseBadge'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>
+      <UserProfile />
+      <CourseBadgePage />
+    </div>
   )
 }
 
