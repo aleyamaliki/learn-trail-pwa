@@ -5,8 +5,8 @@ const UserProfile = () => {
     const username = "meowly";
 
     return (
-      <div className="flex flex-col items-center pt-6 bg-gray-100">
-        <FaUserCircle size={100} className="text-gray-400" />
+      <div className="flex flex-col items-center pt-6">
+        <FaUserCircle size={100} className="text-white" />
         <h1 className="text-xl font-semibold mt-2">{username}</h1>
       </div>
   )

@@ -9,26 +9,25 @@ const CourseNavbar = () => {
   };
 
   return (
-    <div className="fixed w-full bg-white shadow-md p-4 flex justify-between items-center">
+    <div className="fixed w-full bg-bgBar shadow-md p-4 flex justify-between items-center">
       {/* Left Side: Hamburger Icon */}
       <div className="flex items-center">
-        <FaBars size={24} className="text-gray-700" /> {/* Hamburger Icon */}
+        <FaBars size={24} className="text-white" />
       </div>
 
-      {/* Center: Course Title with Dropdown */}
       <div className="relative">
         <button 
-          className="flex items-center text-lg font-bold text-gray-700 focus:outline-none" 
+          className="flex items-center text-lg font-bold text-white focus:outline-none" 
           onClick={toggleDropdown}
         >
-          Course Title {/* Displaying the current course */}
-          <FaChevronDown className="ml-2" /> {/* Down Arrow */}
+          Course Title 
+          <FaChevronDown className="ml-2" /> 
         </button>
 
         {/* Dropdown Menu */}
         {isDropdownOpen && (
-          <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
-            <ul className="py-2">
+          <div className="absolute left-0 mt-2 w-48 bg-bgBar border border-bg rounded-lg shadow-lg">
+            <ul className="py-2 text-white">
               <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Course 1</li>
               <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Course 2</li>
               <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Course 3</li>
@@ -37,10 +36,9 @@ const CourseNavbar = () => {
         )}
       </div>
       
-      {/* Right Side: Placeholder for potential icons or profile */}
       <div className="flex items-center">
-        <FaCoins size={24} className="text-yellow-500" /> {/* Token Logo */}
-        <span className="ml-2 text-lg font-semibold text-gray-700">100 Tokens</span>
+        <FaCoins size={24} className="text-yellow-500" /> 
+        <span className="ml-2 text-lg font-semibold text-white">100 Tokens</span>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ const coursesData = [
 const CourseBadge = () => {
   return (
     <div className="p-4">
-        <h1 className="text-xl pb-4 font-semibold">Courses Badges</h1>
+        <h1 className="text-2xl pb-4 text-bgBar font-bold">Courses Badges</h1>
         <div className="grid grid-cols-3 md:grid-cols-2 gap-4">
       {coursesData.map((course, index) => (
         <CourseBadgeList

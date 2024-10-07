@@ -20,7 +20,7 @@ const MainLayout = () => {
             headerBar = <HomeNavbar />;
     }
   return (
-    <div className="flex flex-col justify-between bg-gray-100">
+    <div className="flex flex-col justify-between bg-bg">
         <header className="flex shrink-0">
             {headerBar}
         </header>

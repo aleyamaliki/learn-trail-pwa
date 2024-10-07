@@ -3,7 +3,7 @@ import '../Shape/Hexagon.css';
 
 const CourseBadgeList = ({ title, imageSrc }) => {
   return (
-    <div className="flex flex-col items-center p-4 bg-white shadow-md rounded-lg">
+    <div className="flex flex-col items-center p-4 bg-third shadow-md rounded-lg">
       {/* Left Section: Title and Progress Bar */}
       <div className="">
       {/* Hexagon Image */}
@@ -12,7 +12,7 @@ const CourseBadgeList = ({ title, imageSrc }) => {
       </div>
 
       {/* Course Title */}
-      <h2 className="text-sm font-semibold text-center">{title}</h2>
+      <h2 className="text-sm font-semibold text-white text-center">{title}</h2>
         </div>
     </div>
   );

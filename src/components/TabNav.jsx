@@ -14,13 +14,13 @@ const TabNav = () => {
   };
 
   return (
-    <div className="w-full fixed bottom-0 bg-white shadow-md">
+    <div className="w-full fixed bottom-0 bg-bgBar shadow-md">
       <div className="flex justify-around">
         {/* Home Tab */}
         <button
           onClick={() => handleTabClick('home', '/home')}
           className={`p-4 w-full flex flex-col items-center ${
-            activeTab === 'home' ? 'text-blue-500' : 'text-gray-500'
+            activeTab === 'home' ? 'text-white' : 'text-third'
           }`}
         >
           <AiFillHome size={24} />
@@ -31,7 +31,7 @@ const TabNav = () => {
         <button
           onClick={() => handleTabClick('search', '/search')}
           className={`p-4 w-full flex flex-col items-center ${
-            activeTab === 'search' ? 'text-blue-500' : 'text-gray-500'
+            activeTab === 'search' ? 'text-white' : 'text-third'
           }`}
         >
           <FaSearch size={24} />
@@ -42,7 +42,7 @@ const TabNav = () => {
         <button
           onClick={() => handleTabClick('courses', '/course')}
           className={`p-4 w-full flex flex-col items-center ${
-            activeTab === 'courses' ? 'text-blue-500' : 'text-gray-500'
+            activeTab === 'courses' ? 'text-white' : 'text-third'
           }`}
         >
           <RiBook2Fill size={24} />
@@ -53,7 +53,7 @@ const TabNav = () => {
         <button
           onClick={() => handleTabClick('profile', '/profile')}
           className={`p-4 w-full flex flex-col items-center ${
-            activeTab === 'profile' ? 'text-blue-500' : 'text-gray-500'
+            activeTab === 'profile' ? 'text-white' : 'text-third'
           }`}
         >
           <FaUser size={24} />
