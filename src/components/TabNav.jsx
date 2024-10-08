@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import { AiFillHome } from 'react-icons/ai';
-import { FaSearch, FaUser } from 'react-icons/fa'; // Icons from react-icons
+import { FaSearch, FaUser } from 'react-icons/fa';
 import { RiBook2Fill } from 'react-icons/ri';
 
 const TabNav = () => {
   const [activeTab, setActiveTab] = useState('home');
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate(); 
 
   const handleTabClick = (tab, route) => {
     setActiveTab(tab);
-    navigate(route); // Navigate to the specified route
+    navigate(route);
   };
 
   return (

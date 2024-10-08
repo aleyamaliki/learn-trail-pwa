@@ -30,7 +30,7 @@ const MainLayout = () => {
         <Outlet />
       </div>
 
-            <TabNav />
+        <TabNav />
     </div>
   );
 };

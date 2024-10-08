@@ -1,18 +1,32 @@
-import React, { useEffect, useState } from 'react'
-import './App.css'
-//import TabNav from './components/TabNav'
-//import HomeNavbar from './components/NavBar/HomeNavBar'
-//import CourseNavbar from './components/NavBar/CourseNavBar'
-import Course from './components/Course/CourseList'
-//import LoadingScreen from './components/LoadingScreen'
-import Home from './pages/Home'
-import { createBrowserRouter, Route, Router, RouterProvider, Routes } from 'react-router-dom'
-import MainLayout from './layout/MainLayout'
-import Search from './pages/Search'
-import Profile from './pages/Profile'
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import Course from './components/Course/CourseList';
+import LoadingScreen from './components/Screen/LoadingScreen';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import MainLayout from './layout/MainLayout';
+import Search from './pages/Search';
+import Profile from './pages/Profile';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // New state for login
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   const router = createBrowserRouter([
+    {
+      path: "/login",
+      element: <Login />,
+    },
     {
       path: "/",
       element: <MainLayout />,
@@ -33,24 +47,19 @@ function App() {
           path: "/profile",
           element: <Profile />
         },
-      ]
-    }
-  ])
-  // const [isLoading, setIsLoading] = useState(true);
+      ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/login" />, 
+    },
+  ]);
 
-  // useEffect(() => {
-  //   // Simulate a delay (for example, fetching data)
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 3000); // Set your loading duration here
-  // }, []);
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
 
   return <RouterProvider router={router} />;
-  // (
-  //   <>
-  //     {isLoading ? <LoadingScreen /> : <Home />}
-  //   </>
-  // )
 }
 
-export default App
+export default App;
