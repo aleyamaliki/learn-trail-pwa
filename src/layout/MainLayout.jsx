@@ -4,6 +4,7 @@ import TabNav from '../components/TabNav';
 import HomeNavbar from '../components/NavBar/HomeNavBar';
 import CourseNavbar from '../components/NavBar/CourseNavBar';
 import ProfileNavbar from '../components/NavBar/ProfileNavBar';
+import LessonNavbar from '../components/NavBar/LessonNavBar';
 
 const MainLayout = () => {
     const location = useLocation();
@@ -15,6 +16,9 @@ const MainLayout = () => {
             break;
         case '/profile':
             headerBar = <ProfileNavbar />;
+            break;
+        case '/lesson4':
+            headerBar = <LessonNavbar />;
             break;
         default:
             headerBar = <HomeNavbar />;

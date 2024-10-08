@@ -8,10 +8,10 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import MainLayout from './layout/MainLayout';
 import Search from './pages/Search';
 import Profile from './pages/Profile';
+import Lesson4 from './components/ProgressCourse/Lesson4';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // New state for login
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,6 +46,10 @@ function App() {
         {
           path: "/profile",
           element: <Profile />
+        },
+        {
+          path: "/lesson4",
+          element: <Lesson4 />
         },
       ],
     },
