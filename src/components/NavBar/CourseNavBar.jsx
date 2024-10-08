@@ -10,7 +10,7 @@ const CourseNavbar = () => {
 
   return (
     <div className="fixed w-full bg-bgBar shadow-md p-4 flex justify-between items-center">
-      {/* Left Side: Hamburger Icon */}
+      {/* Left Side */}
       <div className="flex items-center">
         <FaBars size={24} className="text-white" />
       </div>
@@ -20,7 +20,7 @@ const CourseNavbar = () => {
           className="flex items-center text-lg font-bold text-white focus:outline-none" 
           onClick={toggleDropdown}
         >
-          Course Title 
+          Solana Blockchain Development 
           <FaChevronDown className="ml-2" /> 
         </button>
 
@@ -28,9 +28,9 @@ const CourseNavbar = () => {
         {isDropdownOpen && (
           <div className="absolute left-0 mt-2 w-48 bg-bgBar border border-bg rounded-lg shadow-lg">
             <ul className="py-2 text-white">
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Course 1</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Course 2</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Course 3</li>
+              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">TBC</li>
+              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">TBC</li>
+              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">TBC</li>
             </ul>
           </div>
         )}

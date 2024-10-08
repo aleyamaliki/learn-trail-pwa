@@ -24,7 +24,7 @@ const MainLayout = () => {
             headerBar = <HomeNavbar />;
     }
   return (
-    <div className="flex flex-col justify-between bg-bg">
+    <div className="flex flex-col justify-between">
         <header className="flex shrink-0">
             {headerBar}
         </header>

@@ -1,33 +1,13 @@
 import React from 'react';
-import CourseBadgeList from './CourseBadgeList'; // Adjust the path to your CourseBadge component
+import CourseBadgeList from './CourseBadgeList'; 
+import Badge from '../../assets/learn-trail/badge-module.png'
 
 // Dummy data for courses
 const coursesData = [
   {
-    title: "Introduction to React",
+    title: "Solana Module 1",
     progress: 65,
-    imageSrc: "https://via.placeholder.com/100" // Dummy image
   },
-  {
-    title: "Advanced JavaScript",
-    progress: 85,
-    imageSrc: "https://via.placeholder.com/100" // Dummy image
-  },
-  {
-    title: "CSS Mastery",
-    progress: 50,
-    imageSrc: "https://via.placeholder.com/100" // Dummy image
-  },
-  {
-    title: "Web Accessibility",
-    progress: 40,
-    imageSrc: "https://via.placeholder.com/100" // Dummy image
-  },
-  {
-    title: "Full Stack Development",
-    progress: 75,
-    imageSrc: "https://via.placeholder.com/100" // Dummy image
-  }
 ];
 
 const CourseBadge = () => {
@@ -39,7 +19,7 @@ const CourseBadge = () => {
         <CourseBadgeList
           key={index}
           title={course.title}
-          imageSrc={course.imageSrc}
+          imageSrc={Badge}
         />
       ))}
         </div>

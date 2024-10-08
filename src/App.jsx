@@ -8,7 +8,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import MainLayout from './layout/MainLayout';
 import Search from './pages/Search';
 import Profile from './pages/Profile';
-import Lesson4 from './components/ProgressCourse/Lesson4';
+import Lesson4 from './components/Lesson/Lesson4';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

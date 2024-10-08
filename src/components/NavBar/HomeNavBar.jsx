@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaCoins } from 'react-icons/fa'; // Token icon from react-icons
+import { FaCoins } from 'react-icons/fa';
+import Profile from '../../assets/learn-trail/nouns-profile.png'
 
 const HomeNavbar = () => {
   return (
@@ -7,9 +8,9 @@ const HomeNavbar = () => {
       {/* Left Side */}
       <div>
         <img
-          src="https://via.placeholder.com/150"
+          src={Profile}
           alt="Profile"
-          className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
+          className="w-12 h-12 rounded-full object-cover bg-white border-2 border-gray-300"
         />
       </div>
      {/* Right Side */}

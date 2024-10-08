@@ -1,8 +1,8 @@
 import React from 'react'
 
 const explores = [
-    { id: 1, title: 'React Native for Beginners', description: 'Learn the basics of React Native.' },
-    { id: 2, title: 'Data Structures in Python', description: 'Master data structures with Python.' },
+    { id: 1, title: 'TBA', description: 'TBA.' },
+    { id: 2, title: 'TBA', description: 'TBA.' },
   ];
 
 const Explore = () => {

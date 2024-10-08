@@ -1,8 +1,7 @@
 import React from 'react';
 
 const courses = [
-  { id: 1, title: 'Advanced JavaScript', description: 'Master JavaScript and ES6+ features.' },
-  { id: 2, title: 'UI/UX Design Fundamentals', description: 'Design beautiful user interfaces.' },
+  { id: 1, title: 'Solana Blockchain Development', description: 'Designed to provide a comprehensive understanding of Solana.' },
 ];
 
 
