@@ -9,13 +9,18 @@ Empowering Web3 Pioneers through gamified learning.
 - **Community Support**
 
 ## Getting Started
-
-Follow these instructions to get the app up and running on your local machine.
-
 ### 1. Clone the repository
-
-```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-```bash
 
+### 2. Install dependencies
+npm install
+
+### 3. Build the app
+npm run build
+
+### 4. Preview the app
+npm run preview
+
+### 5. Running in Development Mode
+npm run dev
