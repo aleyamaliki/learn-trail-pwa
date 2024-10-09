@@ -17,3 +17,7 @@ Follow these instructions to get the app up and running on your local machine.
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
+### 2.Install dependencies
+```bash
+npm install
