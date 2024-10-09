@@ -1,8 +1,19 @@
-# React + Vite
+# Learn Trail Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Empowering Web3 Pioneers through gamified learning.
 
-Currently, two official plugins are available:
+## Features
+- **Gamified Learning**
+- **Centralize Resources**
+- **Comprehensive Curriculum**
+- **Community Support**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+Follow these instructions to get the app up and running on your local machine.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
